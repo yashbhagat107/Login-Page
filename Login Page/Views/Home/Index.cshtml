@@ -1,0 +1,75 @@
+﻿@*@{ 
+    Layout = null;
+}*@
+
+@Html.Raw(TempData["Error"])
+<html>
+<head>
+    
+</head>
+
+<body style="background-image:url(../../Images/background1.jpeg); background-size:cover;">
+    <div class="container" style="transform:translate(4%,50%)">
+
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+            <div class="col-lg-5">
+                <div class="row">
+                    <div class="col-lg-1">
+
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header h-100">
+                                    <h2>Login</h2>
+                                </div>
+                                <div class="card-title">
+
+                                </div>
+                                @using (Html.BeginForm())
+                                {
+                                    <div class="card-body shadow-lg">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span>Username:</span>
+
+                                            </div>
+                                            <div class="col-8 pb-3">
+                                                <input type="text" class="form-control" placeholder="Enter Username..." id="Username" name="Username" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <span>Password:</span>
+
+                                            </div>
+                                            <div class="col-8 pb-3">
+                                                <input type="password" class="form-control" placeholder="Enter Password" id="Password" name="Password" />
+                                            </div>
+                                        </div>
+                                        <hr class="hr" />
+                                        <div style="text-align:center;">
+                                            <input type="submit" class="btn btn-success" style="text-align:center;" value="Submit" />
+                                        </div>
+
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
